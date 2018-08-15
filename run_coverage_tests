@@ -1,0 +1,2 @@
+#!/bin/bash
+coverage run --source='.' --omit='manage.py','twitter/wsgi.py' manage.py test; coverage html; xdg-open htmlcov/index.html
